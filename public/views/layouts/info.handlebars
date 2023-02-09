@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Desafio 12 - Info</title>
+</head>
+
+<body>
+    <div id="info" class="bg-light m-auto w-50 rounded p-3 mt-3 mb-3">
+        <h2>Argumentos de entrada:</h2>
+        <p>{{args}}</p>
+    </div>
+    <div id="info" class="bg-light m-auto w-50 rounded p-3 mt-3 mb-3">
+        <h2>Sistema operativo:</h2>
+        <p>{{platform}}</p>
+    </div>
+    <div id="info" class="bg-light m-auto w-50 rounded p-3 mt-3 mb-3">
+        <h2>Versión de Node:</h2>
+        <p>{{version}}</p>
+    </div>
+    <div id="info" class="bg-light m-auto w-50 rounded p-3 mt-3 mb-3">
+        <h2>Memoria reservada:</h2>
+        <p>rss: {{memory.rss}}</p>
+        <p>heapTotal: {{memory.heapTotal}}</p>
+        <p>heapUsed: {{memory.heapUsed}}</p>
+        <p>external: {{memory.external}}</p>
+        <p>arrayBuffers: {{memory.arrayBuffers}}</p>
+        
+    </div>
+    <div id="info" class="bg-light m-auto w-50 rounded p-3 mt-3 mb-3">
+        <h2>Path de ejecución:</h2>
+        <p>{{path}}</p>
+    </div>
+    <div id="info" class="bg-light m-auto w-50 rounded p-3 mt-3 mb-3">
+        <h2>Process id:</h2>
+        <p>{{id}}</p>
+    </div>
+    <div id="info" class="bg-light m-auto w-50 rounded p-3 mt-3 mb-3">
+        <h2>Carpeta del proyecto:</h2>
+        <p>{{projectFolder}}</p>
+    </div>
+    <div id="info" class="bg-light m-auto w-50 rounded p-3 mt-3 mb-3">
+        <h2>Número de procesadores:</h2>
+        <p>{{numProcessors}}</p>
+    </div>
+</body>
+
+</html>

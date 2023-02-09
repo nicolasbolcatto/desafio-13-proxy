@@ -1,0 +1,6 @@
+nodemon server.js -p 8080 -m FORK
+nodemon server.js -p 8080 -m CLUSTER
+forever server.js --watch -p 8080 -m FORK
+forever server.js --watch -p 8080 -m CLUSTER
+pm2 start server.js --name="Servidor fork" --watch -- -p 8080 -m FORK
+pm2 start server.js --name="Servidor cluster" --watch -- -p 8080 -m FORK
